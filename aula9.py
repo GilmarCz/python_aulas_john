@@ -21,7 +21,15 @@
 # ultimo = len(entrada) - 1
 # print(f"O ultimo caracter da palavra {entrada} é {entrada[ultimo]}")
 
-string_entrada = input("Por favor, digite uma string: ") # Solicita ao usuário para digitar uma string
-print(string_entrada[0]) # Imprime o primeiro caractere da string
-print(string_entrada[1]) # Imprime o segunda caractere da string
-print(string_entrada[3]) # Imprime o quarta caractere da string
+# string_entrada = input("Por favor, digite uma string: ") # Solicita ao usuário para digitar uma string
+# print(string_entrada[0]) # Imprime o primeiro caractere da string
+# print(string_entrada[1]) # Imprime o segunda caractere da string
+# print(string_entrada[3]) # Imprime o quarta caractere da string
+
+entrada = input("Por favor, digite uma string: ")
+penultimo = len(entrada)
+if entrada[1] == entrada[penultimo - 2]:
+    print(f"O segundo caracter e o penultimo são iguais {entrada[1]} = {entrada[penultimo - 2]}")
+else:
+    print("Tente outra vez!!!")
+    
