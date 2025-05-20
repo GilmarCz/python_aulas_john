@@ -71,3 +71,16 @@
 # # Chama a função para executá-la
 # quadradoString()  # Isso inicia todo o processo
 
+def Repetir(palavra, numero):
+    stringTotal = (palavra * numero)
+    linha = 0
+    while linha < numero:
+        coluna = 0
+        letras = " "
+        while coluna < numero:
+            posição = linha*numero + coluna
+            letras += stringTotal[posição]
+            coluna += 1
+        print(letras)
+        linha += 1
+Repetir("Jumanji", 4)
