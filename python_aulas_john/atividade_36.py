@@ -1,0 +1,1 @@
+# Atividade 36  ***Pegar resolução com o John
