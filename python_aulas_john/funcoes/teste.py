@@ -31,12 +31,22 @@
 #     print(elemento)
 #     linha += 1
 
-def cumprimentar (nome):
-    print(f"Olá, {nome}")
+# def cumprimentar (nome):
+#     print(f"Olá, {nome}")
     
-def cumprimentar_vezes (nome, vezes):
-    while vezes > 0:
-        cumprimentar(nome)
-        vezes -= 1
+# def cumprimentar_vezes (nome, vezes):
+#     while vezes > 0:
+#         cumprimentar(nome)
+#         vezes -= 1
         
-cumprimentar_vezes("Maria", 5)
+# cumprimentar_vezes("Maria", 5)
+
+
+def resultado():
+    resultado = 25 + 25
+    return resultado
+def calculo(x):
+    soma = x + resultado()
+    print(soma)
+    
+calculo(50)
