@@ -72,3 +72,32 @@
 #    controle += 1
 #    print(lista)
 # print(f"Lista completa: {lista}")
+
+# Adicionar itens em um "lugar" especifico
+# numeros = []
+# numeros.append(5)
+# numeros.append(2)
+# numeros.append(6)
+# numeros.append(10)
+# print(numeros)
+# numeros.insert(1,50)
+# print(numeros)
+# numeros.insert(0,0)
+# print(numeros)
+# numeros.insert(3,33)
+# print(numeros)
+
+# # Remover itens
+# numeros.pop(2)
+# print(numeros)
+# num_del = numeros.pop(0)
+# print(numeros)
+
+# # Remover o valor de um elemento da lista
+# numeros.remove(33)
+# print(numeros)
+# numeros.insert(10,"Gil")
+# print(numeros)
+# numeros.remove("Gil")
+# print(numeros)
+
