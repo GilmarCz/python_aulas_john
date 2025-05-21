@@ -29,19 +29,46 @@
 #     lista1[troca] = valor
 #     print("Lista atualizada:", lista1)
     
-lista1 = [1, 2, 3, 4, 5]
+# lista1 = [1, 2, 3, 4, 5]
 
-while True:
-    print("Lista atual: ",lista1)
-    troca = int(input("digite um índice ou -1 para sair: "))
-    if troca == -1:
-        print("Programa encerrado")
-        break
-    if 0 <= troca < len(lista1):
-     valor = int(input("digite um novo valor: "))   
-     lista1[troca] = valor
-    else:
-        print("Indice invalido, tente novamente:")
+# while True:
+#     print("Lista atual: ",lista1)
+#     troca = int(input("digite um índice ou -1 para sair: "))
+#     if troca == -1:
+#         print("Programa encerrado")
+#         break
+#     if 0 <= troca < len(lista1):
+#      valor = int(input("digite um novo valor: "))   
+#      lista1[troca] = valor
+#     else:
+#         print("Indice invalido, tente novamente:")
         
-print(lista1)
+# print(lista1)
     
+# Fatiar lista
+# letras = ['a','b','c','d','e','f']
+# print(letras[1:4]) # corta do elemento 1 ao elemento 4 --> ['b', 'c', 'd']
+# print(letras[:3]) # corta do início até o 3-1 --> ['a', 'b', 'c']
+# print(letras[3:]) # do índice 3 até o final --> ['d', 'e', 'f']
+# print(letras[::2]) # todos, com passo 2 (pula de 2 em 2) --> ['a', 'c', 'e']
+# print(letras[::-1]) # lista invertida --> ['f', 'e', 'd', 'c', 'b', 'a']
+
+# Adicionar itens a lista
+# numeros = []
+# numeros.append(5)
+# numeros.append(2)
+# numeros.append(6)
+# numeros.append(10)
+# numeros.append(1)
+# print(numeros)
+
+# Prática
+# pergunta = int(input("Quantos itens serão adicionados? "))
+# lista = []
+# controle = 0
+# while controle < pergunta:
+#    nun = int(input(f"Digite o {controle+1}° número: ")) 
+#    lista.append(nun)
+#    controle += 1
+#    print(lista)
+# print(f"Lista completa: {lista}")
