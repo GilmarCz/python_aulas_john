@@ -101,3 +101,12 @@
 # numeros.remove("Gil")
 # print(numeros)
 
+# Pratica
+escolha = int(input("Escolha uma opção:\n1-adicionar item\n2-excluir item\nOPÇÂO:"))
+if escolha == 1:
+    print("Adicionar +1")
+elif escolha == 2:
+    print("Excluir -1")
+else:
+    print("Opção invalida! Tente 1 ou 2")
+lista = [1]
