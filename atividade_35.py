@@ -1,1 +1,0 @@
-# Atividade 35  ***Pegar resolução com o John
