@@ -184,3 +184,15 @@
 #         lista_ord = sorted(lista)
 #         print(f" Lista ordenada - {lista_ord}")
         
+# Maximo, Minino e Soma
+# num = [0,45,78,6,32,15]
+# print(max(num))
+# print(min(num))
+# print(sum(num))
+
+lista_mediana = [15,48,79,36,56,89,74,15,32]
+def mediana(minha_lista: list):
+    ordenada = sorted(minha_lista)
+    centro_lista = len(ordenada) // 2
+    return ordenada[centro_lista]
+print(f"A mediana é {mediana(lista_mediana)}")
