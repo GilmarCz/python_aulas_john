@@ -102,11 +102,25 @@
 # print(numeros)
 
 # Pratica
-escolha = int(input("Escolha uma opção:\n1-adicionar item\n2-excluir item\nOPÇÂO:"))
-if escolha == 1:
-    print("Adicionar +1")
-elif escolha == 2:
-    print("Excluir -1")
-else:
-    print("Opção invalida! Tente 1 ou 2")
+escolha = int(input("Escolha uma opção: \n 1-Para adicionar item \n 2-Para excluir item \n 0-Para sair \n OPÇÂO:"))
 lista = [1]
+controle = 1
+while True:
+    if escolha == 1:
+        print("Adicionar +1 \n", lista)
+        lista.append(controle + 1)
+        controle += 1
+    elif escolha == 2:
+        print("Excluir -1 \n", lista)
+        if controle < 0:
+            print("Lista vazia, adicione 1 na lista")
+        else:
+            lista.pop(controle - 1)
+            controle -= 1
+    elif escolha == 0:
+        print("Sair \n", lista)
+        break
+    else:
+        print("Opção invalida! Tente: 1 , 2 ou 0 \n", lista)
+        
+print(lista)
