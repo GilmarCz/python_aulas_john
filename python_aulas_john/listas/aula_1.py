@@ -203,3 +203,10 @@
 
 # lista = [1, 2, 5, 9]
 # print(tamanho(lista)) 
+
+# lista = [15,48,79,36,56,89,74,15,32]
+# x = 10
+# if x in lista:
+#     print("Sim existe")
+# else:
+#     print("Não existe")
