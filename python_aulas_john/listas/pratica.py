@@ -1,8 +1,8 @@
 # Inicializa a lista com o número 1 já presente
-lista = [1]
+lista = []
 
 # Define o próximo número a ser adicionado como 2 (já que 1 já está na lista)
-proximo_numero = 2
+proximo_numero = 1
 
 # Início do loop infinito para manter o programa em execução até o usuário decidir sair
 while True:
