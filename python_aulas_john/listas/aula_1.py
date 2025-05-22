@@ -102,25 +102,56 @@
 # print(numeros)
 
 # Pratica
-escolha = int(input("Escolha uma opção: \n 1-Para adicionar item \n 2-Para excluir item \n 0-Para sair \n OPÇÂO:"))
+# Inicia a lista com o número 1 já presente
 lista = [1]
+
+# Controle serve para manter o valor do próximo número a ser adicionado ou o tamanho da lista
 controle = 1
+
+# Início de um laço infinito que só para quando o usuário escolher sair
 while True:
-    if escolha == 1:
+    # Mostra o menu de opções e solicita entrada do usuário
+    escolha = input("Escolha uma opção: \n 1-Para adicionar item | 2-Para excluir item | 0-Para sair \n OPÇÂO: ")
+
+    # Se o usuário escolher "1", será adicionado um novo número à lista
+    if escolha == "1":
+        # Exibe mensagem e a lista atual antes da adição
         print("Adicionar +1 \n", lista)
+        # Adiciona o próximo número (controle + 1) na lista
         lista.append(controle + 1)
+        # Atualiza o controle (incrementa 1)
         controle += 1
-    elif escolha == 2:
+
+    # Se o usuário escolher "2", será feita uma tentativa de remover o último item da lista
+    elif escolha == "2":
+        # Exibe mensagem e a lista atual antes da remoção
         print("Excluir -1 \n", lista)
-        if controle < 0:
+        # Verifica se o controle é menor que 0 
+        if len(lista) == 0:
+
+            # Informa que a lista está vazia
             print("Lista vazia, adicione 1 na lista")
         else:
+            # Remove o último item da lista com base no índice (controle - 1)
             lista.pop(controle - 1)
+            # Atualiza o controle (decrementa 1)
             controle -= 1
-    elif escolha == 0:
+
+    # Se o usuário escolher "0", o programa encerra
+    elif escolha == "0":
+        # Exibe mensagem de saída e a lista atual
         print("Sair \n", lista)
+        
+        if lista == []:
+            print(f"Lista vázia ",lista)
+        # Interrompe o loop com break    
         break
+
+    # Se a entrada for diferente de "1", "2" ou "0", exibe aviso de opção inválida
     else:
         print("Opção invalida! Tente: 1 , 2 ou 0 \n", lista)
-        
-print(lista)
+
+    # Exibe a lista atual ao final de cada iteração
+    print(lista)
+
+
