@@ -4,3 +4,5 @@ def lista_estrelas(lista: list):
         estrela = "*" * i
         print(estrela)
 lista_estrelas(lista_numeros)
+
+###
