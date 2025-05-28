@@ -47,14 +47,14 @@ print(conta_elementos_mach(lista_bidimensional,num)) """
 # print(conta_elementos_mach(lista_bidimensional,num))
 
 # resolução John
-lista_bidimensional = [[0,1,2,3],[0,8,6,9],[1,2,7,4],[4,5,6,8]]
-num = 4
-def conta_elementos_mach(minha_matriz: list, elemento: int):
-    contagem = 0
-    for linha in minha_matriz:
-        for item in linha:
-            if item == elemento:
-                contagem += 1
-    return contagem
+# lista_bidimensional = [[0,1,2,3],[0,8,6,9],[1,2,7,4],[4,5,6,8]]
+# num = 4
+# def conta_elementos_mach(minha_matriz: list, elemento: int):
+#     contagem = 0
+#     for linha in minha_matriz:
+#         for item in linha:
+#             if item == elemento:
+#                 contagem += 1
+#     return contagem
 
-print(conta_elementos_mach(lista_bidimensional,num))
+# print(conta_elementos_mach(lista_bidimensional,num))
