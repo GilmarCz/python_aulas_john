@@ -21,3 +21,15 @@
 # print(numero[5])
 # for i in numero:
 #     print(i)
+
+# count() conta quantas vezes uma string ou interio tem dentro de um conjunto de dados
+minha_string = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeiras"
+print(minha_string.count("a")) # Vai contar quantas vezes a letra 'a' aparece (9 vezes)
+
+minha_lista = [1,2,3,5,6,6,9,9,8]
+print(minha_lista.count(6)) # Vai contar quantas vezes o 6 aparece (2 vezes)
+
+# Replace substitui uma string por outra string
+minha_palavra = "Oi, oi, oi amigos"
+nova_palavra = minha_palavra.replace("Oi","Olá")
+print(nova_palavra) # Olá, oi, oi amigos
