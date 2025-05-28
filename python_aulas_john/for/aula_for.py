@@ -33,3 +33,12 @@
 # minha_palavra = "Oi, oi, oi amigos"
 # nova_palavra = minha_palavra.replace("Oi","Olá")
 # print(nova_palavra) # Olá, oi, oi amigos
+
+# Lista Bidimensional / Matrix
+lista_bidimensional = [
+    [0,1,2,3],
+    [0,8,6,9],
+    [1,2,7,4],
+    [4,5,6,8]
+    ]
+print(lista_bidimensional[2][2]) # primeiro cochete é referente a linha o segundo cochete é a coluna
