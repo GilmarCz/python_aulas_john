@@ -1,0 +1,1 @@
+frutas = ["Pera","Maçã","Uva","Laranja","Melancia"]
