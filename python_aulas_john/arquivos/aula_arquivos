@@ -1,0 +1,12 @@
+# Manipulação de arquivos
+conteudo = None
+try:
+    #with open("aula-python/projeto python/python_aulas_john/arquivos/exemplo.txt") as novo_arquivo:
+    with open("exemplo.txt") as novo_arquivo:
+        # conteudo = novo_arquivo.read()
+        # print(conteudo)
+        for linha in novo_arquivo:
+            print(linha)
+    
+except FileNotFoundError:
+    print("Não encontrado o arquivo")
