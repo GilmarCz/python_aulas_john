@@ -1,18 +1,18 @@
 # minha tentativa de resolução
 # def frutas():
-#     try:
-#         with open("frutas.csv", "r") as novo_arquivo:
-#             conteudo = {}
-#         for linha in novo_arquivo:
-#             linha = linha.replace("\n","")
-#             partes = linha.split(";")
-#             fruta = partes[0]
-#             preco = partes[1:]
-#             novo_arquivo.append(linha)
-#         print("Fruta: ",fruta)
-#         print("Preço: ",preco)    
-#     except FileNotFoundError:
-#         print("Arquivo não encontrado")   
+    # try:
+    #     with open("frutas.csv", "r") as novo_arquivo:
+    #         conteudo = {}
+    #     for linha in novo_arquivo:
+    #         linha = linha.replace("\n","")
+    #         partes = linha.split(";")
+    #         fruta = partes[0]
+    #         preco = partes[1:]
+    #         novo_arquivo.append(linha)
+    #     print("Fruta: ",fruta)
+    #     print("Preço: ",preco)    
+    # except FileNotFoundError:
+    #     print("Arquivo não encontrado")   
 
 # resolução co ajuda gpt
 def frutas():
@@ -48,14 +48,13 @@ def frutas():
         # Caso o arquivo "frutas.csv" não seja encontrado, exibe uma mensagem e retorna dicionário vazio
         print("Arquivo 'frutas.csv' não encontrado.")
         return {}
-
-print(frutas())
+print("\n",frutas(),"\n")
 
 
 # codigo gpt que imprime a lista
-# def frutas():
+# def frutas1():
 #     try:
-#         with open("frutas.csv") as novo_arquivo:
+#         with open("aula-python/projeto python/python_aulas_john/arquivos/frutas.csv","r") as novo_arquivo:
 #             conteudo = {}  # Dicionário para armazenar frutas e seus preços
 
 #             for linha in novo_arquivo:
@@ -75,4 +74,26 @@ print(frutas())
 
 #     except FileNotFoundError:
 #         print("Arquivo não encontrado.")
-# frutas()
+# frutas1()
+
+# resolução John
+# def frutas3():
+#     dicionario_frutas = {}
+    
+#     try:
+#         with open("aula-python/projeto python/python_aulas_john/arquivos/frutas.csv","r") as arquivo1:
+#             for linha in arquivo1:
+#                 #linha = linha.replace("\n","")
+#                 linha = linha.strip()
+#                 if linha:
+#                     dados = linha.split(";")
+#                     dicionario_frutas[dados[0]] = float(dados[1])
+                    
+#     except FileNotFoundError:
+#         print("Arquivo não encontrado")
+        
+#     except ValueError:
+#         print("Erro ao converter o preço para float")
+        
+#     return dicionario_frutas
+# print(frutas3())
