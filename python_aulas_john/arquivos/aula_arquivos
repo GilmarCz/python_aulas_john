@@ -12,11 +12,22 @@
 #     print("Não encontrado o arquivo")
 
 #
-with open("pessoas.csv") as novo_arquivo:
-    for linha in novo_arquivo:
-        linha = linha.replace("\n","")
-        partes = linha.split(";")
-        nome = partes[0]
-        notas = partes[1:]
-        print("Nome: ",nome)
-        print("Nota: ",notas)
+# with open("pessoas.csv") as novo_arquivo:
+#     for linha in novo_arquivo:
+#         linha = linha.replace("\n","")
+#         partes = linha.split(";")
+#         nome = partes[0]
+#         notas = partes[1:]
+#         print("Nome: ",nome)
+#         print("Nota: ",notas)
+
+with open("aula-python/projeto python/python_aulas_john/arquivos/dados.txt","a") as arquivo:
+    f = arquivo
+    #f = arquivo.readline()
+    f.write("\nNova linha")
+    print(f)
+    
+with open("aula-python/projeto python/python_aulas_john/arquivos/dados2.txt","x") as arquivo:
+    f1 = arquivo    
+    f1.write("\nNova linha")
+    print(f1)
