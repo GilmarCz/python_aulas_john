@@ -7,7 +7,7 @@
     
 texto = input("Digite um texto: ")
 try:
-    with open("aula-python/projeto python/python_aulas_john/arquivos/saida.txt", "x") as arquivo:
+    with open("aula-python/projeto python/python_aulas_john/arquivos/saida.txt", "x", encoding="utf-8") as arquivo:
         arquivo.write(texto)
         print("Texto salvo com sucesso!")
 except FileExistsError:
