@@ -1,0 +1,5 @@
+06/06/2025,Estudar Python
+06/06/2025,Aula de fisica
+06/06/2025,Aula python
+07/06/2025,catequese Arthur
+{'Data': '05/06/2025', 'Descrição': 'resolução john'}

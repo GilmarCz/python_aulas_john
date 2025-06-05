@@ -21,13 +21,30 @@
 #         print("Nome: ",nome)
 #         print("Nota: ",notas)
 
-with open("aula-python/projeto python/python_aulas_john/arquivos/dados.txt","a") as arquivo:
-    f = arquivo
-    #f = arquivo.readline()
-    f.write("\nNova linha")
-    print(f)
+# with open("aula-python/projeto python/python_aulas_john/arquivos/dados.txt","a") as arquivo:
+#     f = arquivo
+#     #f = arquivo.readline()
+#     f.write("\nNova linha")
+#     print(f)
     
-with open("aula-python/projeto python/python_aulas_john/arquivos/dados2.txt","x") as arquivo:
-    f1 = arquivo    
-    f1.write("\nNova linha")
-    print(f1)
+# with open("aula-python/projeto python/python_aulas_john/arquivos/dados2.txt","x") as arquivo:
+#     f1 = arquivo    
+#     f1.write("\nNova linha")
+#     print(f1)
+
+# import os # importa o como fosse os comandos do cmd
+
+# os.remove("dados_maior2.csv") # remove/apaga um arquivo
+# if os.path.exists("aula-python/projeto python/aula9.py"):
+#     print("sim a arquivo existe")
+#     os.remove("aula-python/projeto python/aula9.py")
+# else:
+#     print("Arquivo não existe")
+    
+# if os.path.exists("exemplo"):
+#     print("sim a arquivo existe")
+#     os.rmdir("exemplo") # Apaga a pasta
+# else:
+#     print("Arquivo não existe")
+#     os.mkdir("novapasta") # Cria a pasta
+    
