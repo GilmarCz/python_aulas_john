@@ -17,3 +17,15 @@ print(f"Array 3D: {arr3d}, Dimensões: {arr3d.ndim}")
 print(f"Shape arr1d: {arr1d.shape}")
 print(f"Shape arr2d: {arr2d.shape}")
 print(f"Shape arr3d: {arr3d.shape}")
+
+# Dtype
+array_float = np.array([1.5,1.8,9.5])
+print(f"O Dtype dessa array é: {array_float.dtype}")
+print(f"O Dtype dessa arr1d é: {arr1d.dtype}")
+
+# Itemsize
+# Retorna o comprimento de cada elemento da matriz em bytes
+print(f"O Itemsize do aar1d é: {arr1d.itemsize}")
+print(f"O Itemsize do aar2d é: {arr2d.itemsize}")
+print(f"O Itemsize do aar3d é: {arr3d.itemsize}")
+print(f"O Itemsize do array_float é: {array_float.itemsize}")
