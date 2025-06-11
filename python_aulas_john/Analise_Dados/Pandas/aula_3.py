@@ -51,3 +51,29 @@ print(df_filmes_bem_avaliados1[['Series_Title','Genre']].head())
 filmes_acao = df_filmes[df_filmes['Genre'].str.contains('Action', na=False)] # na=False limpa os dados que estão vazios
 print(f"\nFilmes que contem o genero 'Action'")
 print(filmes_acao[['Series_Title','Genre']].head())
+
+ano_filme = df_filmes.iloc[9]
+print(type(ano_filme['Released_Year']))
+
+#Criar nova coluna
+df_filmes['Rating_x_10'] = df_filmes['IMDB_Rating'] * 10
+print(f"\nO DataFrame agora tem uma nova coluna: ")
+print(df_filmes.head())
+
+#Conversão da coluna Gross para float e ignorando erros caso falhar
+df_filmes['Gross'] = pd.to_numeric(df_filmes['Gross'],errors='coerce')
+
+#Agora convertido o numero Gross em numero, é mais seguro fazer a comparação
+df_filmes['Alta_Receita'] = df_filmes['Gross'] > 1000
+print(f"\nDataFrame com uma nova coluna 'Alta Receita' (primeiras linhas)")
+print(df_filmes.head())
+
+# Drop
+# Método drop remove uma linha (registro) ou coluna
+# axis=1 exclui a coluna
+df_filmes = df_filmes.drop('Poster_Link', axis=1)
+print(df_filmes.head())
+
+# axis=0 exclui o registro
+df_filmes = df_filmes.drop(4, axis=0)
+print(df_filmes.head())
