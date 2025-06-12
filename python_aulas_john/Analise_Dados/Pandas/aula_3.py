@@ -115,3 +115,40 @@ df_sem_nan_colunas = df_filmes.dropna(axis=1) # axis=1 colunas | axis=0 linhas
 print(f"Colunas originais: {df_filmes.columns.tolist()}")
 print(f"Colunas depois do drop: {df_sem_nan_colunas.columns.tolist()}")
 print("\n" + "="*60 + "\n")
+
+# Contando frequências de coluna
+contagem_diretores = df_filmes['Director'].value_counts()
+print(f"\nOs 10 diretores mais frequentes: ")
+print(contagem_diretores.head(10))
+print("\n" + "="*60 + "\n")
+
+# Ordenando os filmes pela nota IMDB_Rating
+df_ordenado_por_nota = df_filmes.sort_values(by='IMDB_Rating', ascending=False)
+print(f"\nTop 5 filmes por nota 'IMBD_Rating': ")
+print(df_ordenado_por_nota.head())
+print("\n" + "="*60 + "\n")
+
+# Ordenando os filmes por mais de uma coluna
+df_ordenado_por_duas_colunas = df_filmes.sort_values(by=['Released_Year','Gross'], ascending=[False,True])
+print(f"\nTop 5 filmes por ano e gross: ")
+print(df_ordenado_por_duas_colunas.head())
+print("\n" + "="*60 + "\n")
+
+# Converter caso necessáro
+df_filmes['Gross'] = df_filmes['Gross'].str.replace(',','')
+df_filmes['Gross'] = pd.to_numeric(df_filmes['Gross'],errors='coerce')
+df_filmes['IMDB_Rating'] = pd.to_numeric(df_filmes['IMDB_Rating'],errors='coerce')
+
+# Calculando a média de IMDB e Gross para cada Released_Year
+metricas_por_ano = df_filmes.groupby('Released_Year').agg(
+    Media_Rating=('IMDB_Rating','mean'),
+    Media_Receita=('Gross','mean'),
+    Total_filmes=('Series_Title','count')
+    )
+print(metricas_por_ano)
+print("\n" + "="*60 + "\n")
+
+# Salvando em um arquivo CSV sem o indice
+df_filmes.to_csv('meus_filmes_bem_avaliados.csv',index=False)
+print(f"\nDataFrame salvo em 'meus_filmes_bem_avaliados.csv'")
+print("\n" + "="*60 + "\n")
